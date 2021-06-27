@@ -1,0 +1,57 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: is_this_real_positive
+  examples: |
+    - Is it true that [Event]
+    - Is it false that [Event]
+    - Check if this is valid
+    - Is this valid
+    - Is this a lie
+
+- intent: is_this_real_negative
+  examples: |
+    - Is it false that [Event]
+    - Is this a lie
+
+- intent: check
+  examples: |
+    - [Event]

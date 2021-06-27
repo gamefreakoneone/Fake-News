@@ -41,17 +41,15 @@ nlu:
 
 - intent: is_this_real_positive
   examples: |
-    - Is it true that [Event]
-    - Is it false that [Event]
-    - Check if this is valid
-    - Is this valid
-    - Is this a lie
+    - Is it true that [Event_P](Event_check)
+    - Check if this is valid [Event_P](Event_check)
+    - Is it false that [Event_P](Event_check)
+    - Is this a lie[Event_P](Event_check)
+    - [Event](Unknown_Event_Check)
 
-- intent: is_this_real_negative
+- intent: give_information
   examples: |
-    - Is it false that [Event]
-    - Is this a lie
-
-- intent: check
-  examples: |
-    - [Event]
+    - Is it true that [Apples can cure cancer]{"entity":"Event_check", "value":"News"}
+    - Is it true that [Indira Gandhi died of fever]{"entity":"Event_check", "value":"News"}
+    - Is it false that,[Facebook looks at your messages and sells them]{"entity":"Event_check", "value":"News"}
+    - is it false that,[ sun rises in the west]{"entity":"Event_check", "value":"News"}
